@@ -1,36 +1,36 @@
 
-select 
+SELECT 
 count(*) AS number_of_item
-from menu_items;
+FROM menu_items;
 
-select *
-from menu_items
-order by price;
+SELECT *
+FROM menu_items
+ORDER BY price;
 
-select *
-from menu_items
-order by price desc;
+SELECT *
+FROM menu_items
+ORDER BY price DESC;
 
-select 
+SELECT 
 count(*)
-from menu_items
-where category ='Italian';
+FROM menu_items
+WHERE category ='Italian';
 
-select *
-from menu_items
-where category ='Italian'
-order by price ;
+SELECT *
+FROM menu_items
+WHERE category ='Italian'
+ORDER BY price ;
 
-select *
-from menu_items
-where category ='Italian'
-order by price desc;
+SELECT *
+FROM menu_items
+WHERE category ='Italian'
+ORDER BY price desc;
 
-select category, count(menu_item_id) as num_dishes
-from menu_items
-group by category;
+SELECT category, count(menu_item_id) as num_dishes
+FROM menu_items
+GROUP BY category;
 
 
-select category, avg(price) as avg_price
-from menu_items
-group by category;
+SELECT category, avg(price) as avg_price
+FROM menu_items
+GROUP BY category;
